@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="ours.team20.com.groupay.MyGroupFragment2"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal"
+            android:background="#dc3a2c">
+
+            <ImageView
+                android:id="@+id/image_profile"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+
+
+                <TextView android:text="@string/application"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#e2d3d2"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif"
+                    android:textSize="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/create_group"
+                    android:layout_width="153dp"
+                    android:layout_height="40dp"
+                    android:text="@string/btnCreate"
+                    android:textColor="#e2d3d2"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:background="@color/accent_material_light"
+                    style="?android:attr/buttonBarStyle"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/setting_icon"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#e0e0e0" >
+
+            <TextView android:text="@string/latestGroups"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textColor="#2c2c2c"
+                android:textStyle="normal"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/moneypool_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ListView
+            android:paddingLeft="10dp"
+            android:id="@+id/group_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</FrameLayout>

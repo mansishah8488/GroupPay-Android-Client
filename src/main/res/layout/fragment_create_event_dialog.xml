@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="80dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/event_name"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="#939393"
+            android:layout_gravity="center"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/event_description"
+            android:layout_width="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#939393"
+            android:layout_gravity="center"
+            android:hint="Description"/>
+
+        <EditText
+            android:id="@+id/event_date"
+            android:layout_width="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#939393"
+            android:layout_gravity="center"
+            android:hint="Date"/>
+
+        <EditText
+            android:id="@+id/event_cost"
+            android:layout_width="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#939393"
+            android:layout_gravity="center"
+            android:hint="Cost"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/accent_material_light"
+                android:textSize="22dp"
+                android:fontFamily="sans-serif-medium"
+                style="?android:attr/buttonBarStyle"
+                android:text="Create"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/accent_material_light"
+                android:textSize="22dp"
+                android:fontFamily="sans-serif-medium"
+                style="?android:attr/buttonBarStyle"
+                android:text="Cancel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
